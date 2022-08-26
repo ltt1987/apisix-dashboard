@@ -36,7 +36,7 @@ const Page: React.FC = () => {
   });
 
   const redirect = getUrlQuery('redirect');
-  window.location.href = `/user/login${redirect ? `?redirect=${redirect}` : ''}`;
+  window.location.href = `/apisix-dashboard/user/login${redirect ? `?redirect=${redirect}` : ''}`;
 
   return null;
 };
