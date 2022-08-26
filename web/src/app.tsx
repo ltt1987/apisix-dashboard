@@ -69,7 +69,7 @@ const nullValueFilter = (obj: Record<string, any>) => {
 };
 
 export const request: RequestConfig = {
-  prefix: '/apisix/admin',
+  prefix: '/apisix-admin',
   errorHandler,
   credentials: 'same-origin',
   requestInterceptors: [
