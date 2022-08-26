@@ -43,10 +43,10 @@ export default defineConfig({
   layout: {
     name: 'APISIX Dashboard',
     locale: true,
-    logo: '/favicon.png',
+    logo: '/apisix-dashboard/favicon.png',
   },
-  base: '/',
-  publicPath: '/',
+  base: '/apisix-dashboard/',
+  publicPath: '/apisix-dashboard/',
   define: {
     REACT_APP_ENV: REACT_APP_ENV || false,
   },
