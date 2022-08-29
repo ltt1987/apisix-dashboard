@@ -32,7 +32,8 @@ func Authentication() gin.HandlerFunc {
 		if c.Request.URL.Path == "/apisix-admin/user/login" ||
 			c.Request.URL.Path == "/apisix-admin/tool/version" ||
 			!strings.HasPrefix(c.Request.URL.Path, "/apisix") ||
-			strings.HasPrefix(c.Request.URL.Path, "/apisix-admin/"){
+			strings.HasPrefix(c.Request.URL.Path, "/apisix-admin/") ||
+			strings.HasPrefix(c.Request.URL.Path, "/apisix-dashboard") {
 			c.Next()
 			return
 		}
